@@ -1,4 +1,5 @@
-![ic_launcher_foreground](https://github.com/GopikrishnanN/prng_imageupload/assets/58000918/96a852b3-7f2b-4542-ba7a-2c447d52ed73)SOFTWARE GROUP INTERVIEW TASK
+SOFTWARE GROUP INTERVIEW TASK
+![ic_launcher_foreground](https://github.com/GopikrishnanN/prng_imageupload/assets/58000918/96a852b3-7f2b-4542-ba7a-2c447d52ed73)
 
 # Image Upload Component
 
