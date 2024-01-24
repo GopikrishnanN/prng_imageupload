@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PRNGImageUploadComponent</string>
+    <string name="file_name_none_nfile_type_none">File Name: None\nFile Type: None</string>
+    <string name="submit_text">Submit</string>
+    <string name="allow_permission">Allow Permission</string>
+    <string name="select_a_photo_text">Select a Photo</string>
+    <string name="select_photo_text">Select Photo</string>
+</resources>
