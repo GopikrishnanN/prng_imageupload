@@ -4,7 +4,7 @@
 
 The Image Upload Component is a custom Android view that allows users to select an image file, preview it, display the file type, and simulate the image upload process.
 
-![image](https://github.com/GopikrishnanN/prng_imageupload/assets/58000918/a0c4dac7-c740-40f1-bfce-5957c4f794be)
+![New Project (5)](https://github.com/GopikrishnanN/prng_imageupload/assets/58000918/cb1627ff-6164-43c8-871c-dd3f9543b40f)
 
 ## Integration
 
