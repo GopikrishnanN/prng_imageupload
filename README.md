@@ -1,4 +1,4 @@
-SOFTWARE GROUP INTERVIEW TASK
+![ic_launcher_foreground](https://github.com/GopikrishnanN/prng_imageupload/assets/58000918/96a852b3-7f2b-4542-ba7a-2c447d52ed73)SOFTWARE GROUP INTERVIEW TASK
 
 # Image Upload Component
 
@@ -45,7 +45,9 @@ binding.imageUploadComponent.onClickListener(object : OnClickListener {
 ```
 
 ### Customization
-The Image Upload Component can be customized based on your requirements. You can modify the component's appearance, button texts, or behavior by adjusting the layout XML or the ImageUploadComponent class.
+The Image Upload Component can be customized based on your requirements. You can modify the component's appearance, button texts, or behavior by adjusting the layout XML or the `ImageUploadComponent` class.
+
+![](app/src/main/res/drawable/ic_launcher_foreground.png)
 
 ### Notes
 Ensure that you have the necessary permissions in your AndroidManifest.xml for accessing the camera and external storage, especially if you plan to capture images.
