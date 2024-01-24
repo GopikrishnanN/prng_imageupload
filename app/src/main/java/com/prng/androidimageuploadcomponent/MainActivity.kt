@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity(), CountingRequestBody.Listener {
             override fun onClickListener(uri: Uri) {
                 uri.path?.let { File(it) }?.let {
                     // Dummy Api
-                    viewModel.sendImageUpload(it, applicationContext, this@MainActivity)
+//                    viewModel.sendImageUpload(it, applicationContext, this@MainActivity)
                     updateTable()
                 }
             }
@@ -64,20 +64,18 @@ class MainActivity : AppCompatActivity(), CountingRequestBody.Listener {
     // Dummy Progress
     @SuppressLint("SetTextI18n")
     private fun updateTable() {
-        runOnUiThread {
-            val percentages = resources.getString(R.string.percentages)
-            binding.atvProgressCounter.text = "$percentages$value%"
-            binding.atvProgressCounter.visibility = View.VISIBLE
-            value += 5
-            handle.postDelayed(r, 200)
-            if (value == 100) {
-                handle.removeCallbacks(r)
-                binding.atvProgressCounter.text = "Image Uploaded"
-                Handler(Looper.myLooper()!!).postDelayed({
-                    binding.atvProgressCounter.visibility = View.GONE
-                    value = 0
-                }, 2000)
-            }
+        binding.atvProgressCounter.visibility = View.VISIBLE
+        val percentages = resources.getString(R.string.percentages)
+        binding.atvProgressCounter.text = "$percentages$value%"
+        value += 5
+        handle.postDelayed(r, 200)
+        if (value == 100) {
+            handle.removeCallbacks(r)
+            binding.atvProgressCounter.text = "Image Uploaded"
+            Handler(Looper.myLooper()!!).postDelayed({
+                binding.atvProgressCounter.visibility = View.GONE
+                value = 0
+            }, 2000)
         }
     }
 }

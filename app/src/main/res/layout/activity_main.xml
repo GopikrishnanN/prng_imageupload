@@ -37,6 +37,7 @@
                 android:layout_marginVertical="20dp"
                 android:gravity="center"
                 android:visibility="gone"
+                android:textColor="@color/black"
                 android:text="@string/percentages"
                 android:textSize="40sp"
                 app:layout_constraintEnd_toEndOf="parent"
