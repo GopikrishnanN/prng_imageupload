@@ -17,6 +17,7 @@ The Image Upload Component is a custom Android view that allows users to select 
 <com.example.yourpackage.ImageUploadComponent
     android:layout_width="match_parent"
     android:layout_height="wrap_content"/>
+xml```
 
 Functionality
 The Image Upload Component provides the following functionality:
