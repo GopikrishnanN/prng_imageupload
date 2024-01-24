@@ -4,6 +4,8 @@
 
 The Image Upload Component is a custom Android view that allows users to select an image file, preview it, display the file type, and simulate the image upload process.
 
+![](app/src/main/res/drawable/ic_launcher_foreground.png)
+
 ## Integration
 
 ### 1. Download the Source Code
@@ -44,10 +46,22 @@ binding.imageUploadComponent.onClickListener(object : OnClickListener {
 })
 ```
 
+### How to Plugin?
+
+The `prngimageuploadcomponent` module import your project
+
+use Gradle
+```kts
+implementation(project(":prngimageuploadcomponent"))
+```
+
+use setting gradle
+```kts
+include(":prngimageuploadcomponent")
+```
+
 ### Customization
 The Image Upload Component can be customized based on your requirements. You can modify the component's appearance, button texts, or behavior by adjusting the layout XML or the `ImageUploadComponent` class.
-
-![](app/src/main/res/drawable/ic_launcher_foreground.png)
 
 ### Notes
 Ensure that you have the necessary permissions in your AndroidManifest.xml for accessing the camera and external storage, especially if you plan to capture images.
