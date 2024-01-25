@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity(), CountingRequestBody.Listener {
             override fun onClickListener(uri: Uri) {
                 uri.path?.let { File(it) }?.let {
                     // Dummy Api
-//                    viewModel.sendImageUpload(it, applicationContext, this@MainActivity)
+                    viewModel.sendImageUpload(it, applicationContext, this@MainActivity)
                     updateTable()
                 }
             }
