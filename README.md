@@ -61,6 +61,31 @@ use setting gradle
 include(":prngimageuploadcomponent")
 ```
 
+# Manual Dependency Injection with Retrofit, LiveData, and okhttp3 (Optional)
+
+This guide explains how to set up a manual dependency injection in an Android project using Kotlin, Retrofit for network requests, LiveData for observing data changes, and okhttp3 for HTTP client functionality. The example showcases the use of `lazy` initialization to ensure efficient resource utilization.
+
+## Setup
+
+### Dependencies
+
+Ensure that the following dependencies are added to your project:
+
+```gradle
+// Retrofit
+implementation("com.squareup.retrofit2:retrofit:2.9.0")
+implementation("com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2")
+implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+// OkHttp
+implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.0"))
+implementation("com.squareup.okhttp3:okhttp")
+implementation("com.squareup.okhttp3:logging-interceptor")
+
+// LiveData
+implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
+```
+
 ### Customization
 The Image Upload Component can be customized based on your requirements. You can modify the component's appearance, button texts, or behavior by adjusting the layout XML or the `ImageUploadComponent` class.
 
